@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Movie Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header class="quiz-header">
+            <h1>🎬 Movie Quiz Challenge</h1>
+            <div class="avatar-container">
+                
+            </div>
+        </header>
+        <div class="timer">
+            <span id="timer">30</span> seconds left
+        </div>
+        <main class="quiz-main">
+            <div id="question" class="question-card">
+                Loading...
+            </div>
+            <div class="answers" id="answers"></div>
+        </main>
+        <footer>
+            <button id="next-btn" class="next-btn" disabled>Next Question</button>
+            <div class="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+        </footer>
+        <div id="restart-container" class="restart-container">
+            <button id="restart-btn" class="restart-btn">Start New Game</button>
+        </div>
+    </div>
+
+    <div id="encouragement-message" class="encouragement-message">🎉 Great job! Keep it up!</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
